@@ -1,3 +1,4 @@
+#pragma once
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
 
@@ -6,7 +7,7 @@
 
 typedef int ElementType;
 
-typedef struct _Node{
+typedef struct _Node {
     int Data;
     struct _Node* nextNode;
 }Node;
@@ -16,9 +17,8 @@ void SLL_DestroyNode(Node* Node);
 void SLL_AppendNode(Node** Head, Node* NewNode);
 void SLL_InsertNode(Node* Current, Node* NewNode);
 Node* SLL_GetNodeAt(Node* Head, int Location);
-void RemoveNode(Node** Head, Node* Remove);
+void SLL_RemoveNode(Node** Head, Node* Remove);
 int SLL_GetNodeCount(Node* Head);
+void SLL_InsertNewHead(Node** Head, Node* NewNode);
 
-#endif 
-
-//git commit test
+#endif

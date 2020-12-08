@@ -78,3 +78,12 @@ int SLL_GetNodeCount(Node* Head) {
     }
     return count;
 }
+void SLL_InsertNewHead(Node** Head, Node* NewNode){
+    if(*Head == NULL){
+        *Head = NewNode;
+    }
+    else{
+        NewNode->nextNode = (*Head);
+        *Head = NewNode;
+    }
+}
