@@ -65,12 +65,14 @@ int SLL_GetNodeCount(Node* Head) {
 void SLL_RemoveNode(Node** Head, Node* Remove) {
     if (*Head == Remove) {
         *Head = Remove->nextNode;
+        Remove -> nextNode = NULL;
     }
     else {
+        //Current is Node just before to remove
         Node* Current = *Head;
-        // while (Current != NULL && Current->nextNode != Remove) {
-        //     Current = Current->nextNode;
-        // }
+        while (Current != NULL && Current->nextNode != Remove) {
+            Current = Current->nextNode;
+        }
         if (Current != NULL) {
             Current->nextNode = Remove->nextNode;
         }
