@@ -68,9 +68,9 @@ void SLL_RemoveNode(Node** Head, Node* Remove) {
     }
     else {
         Node* Current = *Head;
-        while (Current != NULL && Current->nextNode != Remove) {
-            Current = Current->nextNode;
-        }
+        // while (Current != NULL && Current->nextNode != Remove) {
+        //     Current = Current->nextNode;
+        // }
         if (Current != NULL) {
             Current->nextNode = Remove->nextNode;
         }
