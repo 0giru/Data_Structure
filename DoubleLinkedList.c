@@ -25,7 +25,6 @@ void DLL_AppendNode(Node** Head, Node* newNode) {
         }
         Tail->nextNode = newNode;
         newNode->prevNode = Tail;
-
     }
 }
 
@@ -40,9 +39,9 @@ Node* DLL_GetNodeAt(Node* Head, int Location) {
 
 void DLL_RemoveNode(Node** Head, Node* Remove) {
     if (*Head == Remove) {
-        *Head = Remove->nextNode;
+        *Head = Remove -> nextNode;
         if((*Head) != NULL){
-            (*Head)->prevNode = NULL;
+            (*Head) -> prevNode = NULL;
         }
         Remove -> nextNode = NULL;
         Remove -> prevNode = NULL;
