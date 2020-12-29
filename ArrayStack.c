@@ -1,3 +1,4 @@
+//Array Stack ver.1
 #include "ArrayStack.h"
 
 void AS_CreateStack(ArrayStack** Stack, int Capacity){

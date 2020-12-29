@@ -1,3 +1,4 @@
+//Array Stack ver.1
 #ifndef _ARRAYSTACK_H
 #define _ARRAYSTACK_H
 

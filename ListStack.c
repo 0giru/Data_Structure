@@ -1,3 +1,4 @@
+// ListStack ver.1
 #include "ListStack.h"
 
 void LS_CreateStack(ListStack** Stack){
